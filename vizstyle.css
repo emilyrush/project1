@@ -1,10 +1,15 @@
 body {
-    background-color: #9a4d55;
+    background-color: lightgray;
+    border: none
   }
 .panel {
-    
-    background-color: #80756b);
+    background-color: #ffffff;
+    border: none
 }
 img {
     float: left;
+}
+.navbar {
+    background-color: #041753;
+    border: none;
 }
