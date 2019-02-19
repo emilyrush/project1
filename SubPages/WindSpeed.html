@@ -16,13 +16,13 @@
     <div class="container-fluid">
       <!-- Brand and toggle get grouped for better mobile display -->
       <div class="navbar-header">
-        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbarToggler" aria-expanded="false">
           <span class="sr-only">Toggle navigation</span>
           <span class="icon-bar"></span>
           <span class="icon-bar"></span>
           <span class="icon-bar"></span>
         </button>
-        <a class="navbar-brand" href="../SubPages/WindSpeed.html">Wind Speed</a>
+        <a class="navbar-brand" href="../index.html">Weather Visualizations</a>
       </div>
   
 <!-- -----------------------------------------------------Navbar-------------------------------------------------------- -->
@@ -33,16 +33,14 @@
         </div>
         <button type="submit" class="btn btn-default">Search</button>
       </form>
-      <ul class="nav navbar-nav navbar-right">
+      <ul class="nav navbar-nav navbar-right" id="navbarToggler">
         <li class="dropdown">
           <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Plots<span class="caret"></span></a>
           <ul class="dropdown-menu">
-            <li><a href="/Cloudiness.html">Cloudiness</a></li>
-            <li><a href="/Humidity.html">Humidity</a></li>
-            <li><a href="/MaxTemp.html">Maximum Temperature</a></li>
-            <li><a href="/WindSpeed">Wind Speed</a></li>
-            <li role="separator" class="divider"></li>
-            <li><a href="#">Separated link</a></li>
+            <li><a href="../SubPages/Cloudiness.html">Cloudiness</a></li>
+            <li><a href="../SubPages/Humidity.html">Humidity</a></li>
+            <li><a href="../SubPages/MaxTemp.html">Maximum Temperature</a></li>
+            <li><a href="../SubPages/WindSpeed.html">Wind Speed</a></li>
           </ul>
           <li><a href="../SubPages/Comparison.html">Comparison</a></li>
           <li><a href="../SubPages/Data.html">Data</a></li>
@@ -58,34 +56,36 @@
       <div class="col-md-8">
         <div class="panel panel-default">
           <div class="panel-body">
-            <h1>Wind Speed vs. Latitude</h1>
-            <img alt="Max Temp graph" width=80% src="https://github.com/emilyrush/weather_api/blob/master/starter_code/Images/max_temp_bubble_plot.png?raw=true" padding-right=100px padding-top=50px> 
-
+            <h1>Latitude vs. Wind Speed</h1>
+            <hr>
+            <img alt="Max Temp graph" width=80% src="../Images/wind_speed.png" padding-right=100px padding-top=50px> 
           </div>
         </div>
       </div>
+
+<!-- ----------------------------------------------Visualization Side Panel------------------------------------------ -->
       <div class="col-md-4">
         <div class="panel panel-default">
             <div class="panel-body">
               <h2>Visualizations</h2>
               <div class="row">
                 <div class="col-xs-6">
-                  <a href="../SubPages/Cloudiness.html" class="thumbnail">
+                  <a href="../SubPages/Cloudiness.html" class="clearfix thumbnail">
                     <img src="../Images/cloudiness.png" alt="Cloudiness">
                   </a>
                 </div>  
                 <div class="col-xs-6">
-                  <a href="../SubPages/Humidity.html" class="thumbnail">
+                  <a href="../SubPages/Humidity.html" class="clearfix thumbnail">
                     <img src="../Images/humidity.png" alt="Humidity">
                   </a>
                 </div>
                 <div class="col-xs-6">
-                    <a href="../SubPages/MaxTemp.html" class="thumbnail">
+                    <a href="../SubPages/MaxTemp.html" class="clearfix thumbnail">
                       <img src="../Images/maxtemp.png" alt="Maximum Temperature">
                     </a>
                   </div>
                   <div class="col-xs-6">
-                    <a href="../" class="thumbnail">
+                    <a href="../SubPages/WindSpeed.html" class="clearfix thumbnail">
                       <img src="../Images/wind_speed.png" alt="Wind Speed">
                     </a>
                   </div>
